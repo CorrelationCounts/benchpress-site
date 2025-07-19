@@ -5,11 +5,11 @@ import { Button } from "flowbite-react";
 import Image from "next/image";
 
 export default function GraphDashboard() {
-  // List your PNG filenames here
+  // Now each image can have its own path and label
   const images = [
-    "graph1.png",
-    "graph2.png",
-    // Add more filenames as needed
+    { src: "C:/Users/Lenovo/Documents/benchpress/results/evaluation/bagging/bagtest_01/bagged_adjmat.png", label: "Graph 1" },
+    { src: "C:/Users/Lenovo/Documents/benchpress/results/evaluation/bagging/bagtest_01/agged_graph.png", label: "Graph 2" },
+    // Add more here
   ];
 
   return (
@@ -28,13 +28,13 @@ export default function GraphDashboard() {
             className="flex flex-col items-center rounded bg-white p-4 shadow"
           >
             <Image
-              src={`/graphs/${img}`}
-              alt={img}
+              src={img.src}
+              alt={img.label}
               width={300}
               height={192}
               className="mb-2 max-h-48 w-auto"
             />
-            <span className="text-sm text-gray-700">{img}</span>
+            <span className="text-sm text-gray-700">{img.label}</span>
           </div>
         ))}
       </div>

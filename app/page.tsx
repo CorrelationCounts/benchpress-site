@@ -8,26 +8,9 @@ export default function Home() {
     {
       title: "Git Hub Repository",
       description:
-        "Learn more on how to get started and use the Benchpress components",
+        "Get the latest updates and contribute to the project on GitHub",
       url: "https://github.com/felixleopoldo/benchpress",
-      icon: (
-        <svg
-          className="h-9 w-9 text-gray-500"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="1.5"
-            d="M12 6.03v13m0-13c-2.819-.831-4.715-1.076-8.029-1.023A.99.99 0 0 0 3 6v11c0 .563.466 1.014 1.03 1.007 3.122-.043 5.018.212 7.97 1.023m0-13c2.819-.831 4.715-1.076 8.029-1.023A.99.99 0 0 1 21 6v11c0 .563-.466 1.014-1.03 1.007-3.122-.043-5.018.212-7.97 1.023"
-          />
-        </svg>
-      ),
+      icon: <Image alt="Figma Logo" src="/figma.svg" width={36} height={36} />,
     },
     {
       title: "Latest Generated Graphs",
@@ -110,6 +93,30 @@ export default function Home() {
         </button>
       ),
     },
+    {
+      title: "Documentation",
+      description:
+        "Learn more on how to get started and use the Benchpress components",
+      url: "https://benchpressdocs.readthedocs.io/en/latest/",
+      icon: (
+        <svg
+          className="h-9 w-9 text-gray-500"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
+            d="M12 6.03v13m0-13c-2.819-.831-4.715-1.076-8.029-1.023A.99.99 0 0 0 3 6v11c0 .563.466 1.014 1.03 1.007 3.122-.043 5.018.212 7.97 1.023m0-13c2.819-.831 4.715-1.076 8.029-1.023A.99.99 0 0 1 21 6v11c0 .563-.466 1.014-1.03 1.007-3.122-.043-5.018.212-7.97 1.023"
+          />
+        </svg>
+      ),
+    },
   ];
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-white px-4 py-24 dark:bg-gray-900">
@@ -142,7 +149,7 @@ export default function Home() {
           </h1>
           <span className="inline-flex flex-wrap items-center justify-center gap-2.5 text-center">
             <span className="inline text-xl text-gray-600 dark:text-gray-400">
-              Your benchmarking is ready, start building with
+              Your benchmarking journey is ready, start building with
             </span>
             <span className="relative inline-flex items-center gap-2">
               <Image
